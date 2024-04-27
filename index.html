@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h1>Formulario de incripción</h1>
+
+    <fieldset>
+        <legend>Datos</legend>
+        <p>
+            <li>
+                <label for="user-name">Nombre:</label>
+                <input id="user-id" type="text" required><br/>
+            </li> 
+        </p>
+        <p>
+            <li>
+                <label for="lname">Apellido:</label>
+                <input id="text" type="text" required><br/>
+            </li>
+        </p>
+        <p>
+            <li>
+                <label for="user-email">Correo:</label>
+                <input id="text" type="email" required><br/>
+            </li>
+        </p>
+        <p>
+            <li>
+                <label for="user-address">Dirección:</label>
+                <input id="user-address" type="text">
+            </li>
+        </p>
+        <p>
+            <li>
+                <label for="user-text">Departamento:</label>
+                <input id="text" type="text">
+            </li>
+        </p>
+        <p>
+            <li>
+                <label for="user-text">País:</label>
+                <input type="text" type="text" required>
+            </li>
+        </p>
+        <p>
+            <li>
+                <label for="user-number">Teléfono de contacto:</label>
+                <input id="number" type="number">
+            </li>
+        </p>
+        <p>
+            <li>
+                <label for="user-text">Descripción personal(Minímo 300 carácteres):</label>
+                <input type="text"  id="name" name="name" required minlength="300" maxlength="300">
+            </li>
+        </p>
+        
+        <li class="button">
+            <button type="submit">Enviar</button>
+        </li>
+
+    </fieldset>
+    <h1>
+        <select name="carreras" id="text" required>
+            <optgroup label="¿A qué carrera deseas inscribirte?" >
+                <option value="000">----------------------------</option>
+                <option value="001">JOBS TO BE DONE</option>
+                <option value="002">CLOUD NATIVE</option>
+                <option value="003">FRONTEND</option>
+                <option value="004">BACKEND</option>
+                <option value="005">FUNDAMENTALS</option>
+                <option value="006">PYTHON</option>
+                <option value="007">MARKETING DIGITAL</option>
+                <option value="008">FUNDAMENTALS DATA</option>
+                <option value="009">INTRODUCCIÓN A JAVA</option>
+                <option value="010">A COMUNICARTE CON LAS INTELIGENCIAS ARTIFICIALES</option>
+                <option value="011">MARCO CONCEPTUAL Y LEGAL DE LA IA</option>
+                <option value="012">DIÁLOGOS DIGITALES: GPT PARA PRINCIPIANTES</option>
+            </optgroup>
+            <li class="button">
+                <button type="submit">Enviar</button>
+            </li>
+        </select>
+    </h1>
+    
+    <h1>Modalidad</h1>
+    <form action="/index.html" >
+        <input type="checkbox" name="text" value="Presencial" >
+        <label for="text">Presencial</label><br>
+        <input type="checkbox" name="text" value="Online">
+        <label for="text">Online</label><br>
+        <input type="submit" value="submit" required>
+    </form>
+    
+    <h1>¿Estás trabajando?</h1>
+    <form action="index.html">
+        <input type="checkbox" name="text" value="Si">
+        <label for="text">Si</label><br>
+        <input type="checkbox" name="text" value="No">
+        <label for="text">No</label><br>
+        <input type="submit" value="submit" required>
+    </form>
+</body>
+</html>
