@@ -1,98 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-
-    <h1>Formulario de incripción</h1>
-    <form method="post" action="index.html">
-
-        <p> 
-            Los campos presedidos por un (*) son obligatorios 
-        </p>
-        <fieldset>
-            <legend>Datos personales</legend>
-            <p>
-                    <label for="u-firstname">*Nombre:</label>
-                    <input id="u-firstname" name="u-firstname" type="text" required><br/>
-            </p>
-            <p>
-                    <label for="u-lastname">*Apellido:</label>
-                    <input id="u-lastname" name="u-lastname" type="text" required><br/>
-            </p>
-            <p>
-                    <label for="u-email">*Correo:</label>
-                    <input id="u-email" name="u-email" type="email" required><br/>
-            </p>
-            <p>
-                    <label for="user-address">Dirección:</label>
-                    <input id="user-address" type="text"/>
-            </p>
-            <p>
-                    <label for="user-text">Departamento:</label>
-                    <input id="text" type="text"/>
-            </p>
-            <p>
-                    <label for="user-text">*País:</label>
-                    <input type="text" type="text" required />
-            </p>
-            <p>
-                    <label for="u-tel">Teléfono de contacto:</label>
-                    <input id="u-tel" name="u-tel" type="tel" placeholder="322 444 2233"
-                    pattern="[0-9]{3} [0-9]{3} [0-9]{4}" />
-            </p>
-            <p>
-                    <label for="f-description">Descripción personal(Minímo 300 carácteres):</label>
-                    <br/>
-                    <input id="f-description" name="f-description" required minlength="300" maxlength="300" >
-                    <br/>
-            </p>
-            <p>
-                <label>*¿A qué carrera deseas inscribirte?</label>
-                <br />
-                <select name="f-type" id="f-type" required>
-                    <option value=>Selecciona una opción...</option>
-                    <option value="001">JOBS TO BE DONE</option>
-                    <option value="002">CLOUD NATIVE</option>
-                    <option value="003">FRONTEND</option>
-                    <option value="004">BACKEND</option>
-                    <option value="005">FUNDAMENTALS</option>
-                    <option value="006">PYTHON</option>
-                    <option value="007">MARKETING DIGITAL</option>
-                    <option value="008">FUNDAMENTALS DATA</option>
-                    <option value="009">INTRODUCCIÓN A JAVA</option>
-                    <option value="010">A COMUNICARTE CON LAS INTELIGENCIAS ARTIFICIALES</option>
-                    <option value="011">MARCO CONCEPTUAL Y LEGAL DE LA IA</option>
-                    <option value="012">DIÁLOGOS DIGITALES: GPT PARA PRINCIPIANTES</option>
-                    <option value="013">DESIGNOPS</option>
-                    <option value="014">BUSINESS ANALYST</option>
-                    <option value="015">FLUTTER</option>
-                    <option value="016">DESIGN THINKING FOR SOFTWARE DEVELOPERS</option>
-                </select>
-            </p>
-
-            <label> *Modalidad: </label>
-            <input id="u-modality--presencial" name="u-modality" type="radio" value="Presencial" required>
-            <label for="u-modality--presencial">Presencial</label>
-            <input id="u-modality--virtual" name="u-modality" type="radio" value="virtual" required />
-            <label for="u-modality--virtual">Virtual</label>
-
-            <p>
-                <label>¿Estás trabajando actualmente?</label>
-                <input id="u-option--yes" name="u-option" type="radio" value="yes" required>
-                <label for="u-option--yes">Si</label>
-                <input id="u-option--no" name="u-option" type="radio" value="No" required>
-                <label for="u-option--no">No</label>
-            </p>
-    
-        <button type="reset">Limpiar</button>
-        <button type="submit">Enviar</button>  
-    </form>
-
-    
-
+    <div id="main">
+        <p class="primary">Spaceships are pretty cool.</p>
+          <div>
+              <div id="spacehip_1" class="spaceships">
+                  <h3>Copernicus</h3>
+                  <p class="primary">The Copernicus is an exo-atmospheric vessel.</p>
+                  <p>It orbits the sun collecting the energy from solar flares in large batteries.</p>
+                  <p>These reserves are then sold to energy deprived, colonised planets in the outer solar system.</p>
+                  <ul>
+                      <li>Age: 55 years</li>
+                      <li>Capacity: 6,000 Zettawatt</li>
+                      <li class="red" id="pink">ZettaSolar Corporation</li>
+                  </ul>
+              </div>
+          <div>
+      </div>
 </body>
 </html>
