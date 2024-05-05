@@ -20,7 +20,10 @@ body {
 .Titulo {
     color: rgb(59, 3, 3); 
     text-align: center;
-    font-size: 0px;
+    font-size: 40px;
+}
+h1:hover {
+    color: #0c0c0c; 
 }
 
 .Integrantes {
@@ -63,8 +66,27 @@ img {
     border-radius: 9px; 
     display: block;
     margin: auto;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
 
 }
+.boton {
+    background-color: rgb(104, 6, 6); 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin: 5px;
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: #0b0d10; 
+    text-align: center;
+}
+
 
 
 
