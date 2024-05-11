@@ -1,94 +1,81 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0000004a;
-    color: #000000;
-    margin: 0;
-    list-style-type: disc;  
-    list-style-type: circle;
-    border: 2px solid #333; 
-    border-radius: 10px; 
-    padding: 20px; 
-    box-sizing: border-box; 
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #f1ebeb;
+    border-radius: 50%;
+    margin: 50px auto;
+    content: "";
+}
+.clock:before {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    z-index: 99;
+    border-radius: 50%;
+    background-color: black;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.segundero, .minutos, .horas {
+    position: absolute;
+    background: #000;
+    transform-origin: 50% 100%;
+    left: 50%;
+    top: 50%;
 }
 
-.Titulo {
-    color: rgb(59, 3, 3); 
-    text-align: center;
-    font-size: 40px;
-}
-h1:hover {
-    color: #0c0c0c; 
-}
-
-.Integrantes {
-    color: rgb(104, 6, 6); 
-    
+.segundero {
+    width: 2px;
+    height: 80px;
+    margin-left: -1px; 
+    margin-top: -80px; 
+    animation: rotate-sec 60s linear infinite;
 }
 
-h2 {
-    color: rgb(104, 6, 6);   
-    margin-top: 20px;
-    text-decoration: underline;
-    text-align: center;
-    
+.minutos {
+    width: 3px;
+    height: 60px;
+    margin-left: -1.5px; 
+    margin-top: -60px; 
+    animation: rotate-min 3600s linear infinite;
 }
 
-p, li {
-    line-height: 1.6;
+.horas {
+    width: 4px;
+    height: 40px;
+    margin-left: -2px; 
+    margin-top: -40px; 
+    animation: rotate-hour 43200s linear infinite;
 }
 
-a {
-    border: 1px solid black;
-   margin-top: 100px;
-   margin-bottom: 100px;
-   margin-right: 150px;
-   margin-left: 80px;
-   background-color: rgba(122, 117, 117, 0.607);
-   list-style-type: circle;
-   
+@keyframes rotate-sec {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.contenedor {
-    margin-top: 20px;
-    text-align: center;
+@keyframes rotate-min {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-
-
-img {
-    border: 3px solid rgb(104, 6, 6); 
-    border-radius: 9px; 
-    display: block;
-    margin: auto;
-    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
-
+@keyframes rotate-hour {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
-.boton {
-    background-color: rgb(104, 6, 6); 
-    color: #fff; 
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    margin: 5px;
-    font-size: 16px; 
-    transition: background-color 0.3s; 
-    text-align: center;
-}
-
-.boton:hover {
-    background-color: #0b0d10; 
-    text-align: center;
-}
-
-
-
-
 
 
